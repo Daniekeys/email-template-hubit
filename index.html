@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   color: #333;
   background-color: #fff;
+  overflow-x: hidden;
 }
 main {
   width: 100vw;
@@ -22,6 +23,7 @@ main {
   display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
   
 }
 .content-center{
@@ -55,6 +57,12 @@ main {
     margin-top: 1rem;
 
 }
+.mail-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 .btn-container{
     display: flex;
     justify-content: center;
@@ -76,6 +84,67 @@ font-size: 1rem;
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+
+    }
+    .one{
+        font-size: 1.2rem;
+        color: #474747;
+    }
+    .content-center{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .img-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .logo{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-title{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .btn{
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+        background: #005FC0;
+        border-radius: 54px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    .mail-content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+}
 
     </style>
 </head>
