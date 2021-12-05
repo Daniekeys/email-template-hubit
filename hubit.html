@@ -244,10 +244,16 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
         display: block;
         outline: none;
         border: none;
+		cursor: pointer;
     }
     .link{
         color: #005FC0;
         display: block;
+        text-decoration: none;
+    }
+    .reset-link{
+        color: #fff;
+        
         text-decoration: none;
     }
     .contact-link{
@@ -312,8 +318,8 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 					
 						<!-- Callout Panel -->
                         
-                                  <button class="reset-btn">
-                                      reset passsword
+                                  <button class="reset-btn" type="button" >
+									  <a class="reset-link" href="#">Reset Password</a> 
                                   </button>  
                         
 						<p>
